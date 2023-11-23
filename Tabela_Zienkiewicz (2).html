@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykonał Zienkiewicz</title>
+
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 2px solid #d31414;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #3498db; /* Kolor tła dla pierwszego wiersza */
+            color: #fff; /* Kolor tekstu dla pierwszego wiersza */
+        }
+
+        .header {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #000;
+            color: #fff;
+        }
+
+        th, td:nth-child(1),
+        th, td:nth-child(2),
+        th, td:nth-child(4),
+        th, td:nth-child(5),
+        th, td:nth-child(6) {
+            color: #000;
+        }
+
+        /* Zmieniony styl dla tekstu w pierwszej kolumnie */
+        td:first-child {
+            color: red; /* Kolor tekstu dla pierwszej kolumny */
+            background-color: #bcdef5;
+            font-weight: bold; /* Pogrubienie tekstu w pierwszej kolumnie */
+            text-align: left; /* Wyrównanie tekstu do lewej */
+        }
+
+        /* Dodany styl dla tekstu w drugiej kolumnie z "GB" */
+        td:nth-child(2) {
+            color: green;
+            background-color: #a2d3f3;
+            text-align: center; /* Wyrównanie tekstu do środka */
+        }
+
+        /* Dodany styl dla tekstu w trzeciej kolumnie z "GDDR" */
+        td:nth-child(3) {
+            color: blue;
+            background-color: #7fc4f3;
+            text-align: right; /* Wyrównanie tekstu do prawej */
+        }
+
+        /* Dodany styl dla tekstu w czwartej kolumnie z "MHz" */
+        td:nth-child(4) {
+            color: orange;
+            background-color: rgb(130, 150, 241);
+            text-align: left; /* Wyrównanie tekstu do lewej */
+        }
+
+        /* Dodany styl dla tekstu w piątej kolumnie */
+        td:nth-child(5) {
+            color: brown;
+            background-color: #74c8ff;
+            text-align: center; /* Wyrównanie tekstu do środka */
+        }
+
+        /* Dodany styl dla tekstu w ostatniej kolumnie "Aktywne" */
+        td:last-child(6) {
+            text-align: right; /* Wyrównanie tekstu do prawej */
+        }
+
+        tr:last-child,
+        tr:first-child {
+            background-color: #3498db; /* Kolor tła dla pierwszego i ostatniego wiersza */
+            color: #fff; /* Kolor tekstu dla pierwszego i ostatniego wiersza */
+            font-size: 18px; /* Wielkość czcionki dla pierwszego i ostatniego wiersza */
+            font-family: Arial, sans-serif; /* Trzcionka dla pierwszego i ostatniego wiersza */
+        }
+
+    </style>
+</head>
+
+<body bgcolor="silver">
+
+    <table>
+        <tr>
+            <th class="header" colspan="6">Dane Kart Graficznych Nvidia serii 40 – Zienkiewicz Bartosz 2F g2</th>
+        </tr>
+        <!-- Dodana kolumna "Typ Chłodzenia" -->
+        <tr>
+            <th>Model</th>
+            <th>Pamięć</th>
+            <th>Rodzaj Pamięci</th>
+            <th>Taktowanie rdzenia</th>
+            <th>Rdzenie CUDA</th>
+            <th>Typ Chłodzenia</th>
+        </tr>
+        <tr>
+            <td>RTX 4060</td>
+            <td>8GB</td>
+            <td>GDDR6</td>
+            <td>2505 MHz</td>
+            <td>3072</td>
+            <td>Aktywne</td>
+        </tr>
+        <tr>
+            <td>RTX 4060 Ti</td>
+            <td>8GB</td>
+            <td>GDDR6</td>
+            <td>2535 MHz</td>
+            <td>4352</td>
+            <td>Aktywne</td>
+        </tr>
+        <tr>
+            <td>RTX 4070</td>
+            <td>12GB</td>
+            <td>GDDR6X</td>
+            <td>2475 MHz</td>
+            <td>5888</td>
+            <td>Aktywne</td>
+        </tr>
+        <tr>
+            <td>RTX 4070 Ti</td>
+            <td>12GB</td>
+            <td>GDDR6X</td>
+            <td>2640 MHz</td>
+            <td>7680</td>
+            <td>Aktywne</td>
+        </tr>
+        <tr>
+            <td>RTX 4080</td>
+            <td>16GB</td>
+            <td>GDDR6</td>
+            <td>2535 MHz</td>
+            <td>9728</td>
+            <td>Aktywne</td>
+        </tr>
+        <tr>
+            <td>RTX 4090</td>
+            <td>24GB</td>
+            <td>GDDR6</td>
+            <td>2550 MHz</td>
+            <td>16384</td>
+            <td>Aktywne</td>
+        </tr>
+        <!-- Nowy wiersz na samym dole tabeli -->
+        <tr>
+            <td colspan="6" style="background-color: #3498db; color: #000000; text-align: center; font-size: 18px; font-family: Arial, sans-serif;">Dane Kart Graficznych Nvidia serii 40</td>
+        </tr>
+    </table>
+
+    <p>źródło: własne</p>
+
+    <a href="index.html">WRÓĆ</a>
+</body>
+</html>
